@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f3e5d7;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1956px;
+  width: 1440px;
+  max-width: 100%; */
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* let content grow naturally */
+  padding: 24px;
+}
+.card {
+  height: 1700px;
+  width: 736px;
+  max-width: 100%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.card-image__thumb {
+  width: 656px;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  object-fit: cover;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title__head {
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 24px;
+  color: #312e2c;
+}
+.card-title__desc {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5f564d;
+  margin-bottom: 32px;
+}
+.card-preparation {
+  width: 656px;
+  height: 172px;
+  max-width: 100%;
+  padding: 24px;
+  gap: 16px;
+  background: #fff7fb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.card-preparation__title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #7a284e;
+  margin-bottom: 4px;
+}
+.card-preparation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  margin-left: 24px;
+  font-family: "Outfit";
+  font-style: normal;
+  line-height: 150%;
+  color: #5f564d;
+}
+span {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5f564d;
+}
+.card-ingredients {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  height: 204px;
+}
+.card-ingredients__title {
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: #854632;
+  margin-bottom: 24px;
+}
+.card-ingredients__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 656px;
+  height: 204px;
+  margin-left: 24px;
+}
+.card-ingredients__link {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5f564d;
+}
+
+.card-instructions {
+  height: 332px;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.card-instructions__title {
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: #854632;
+  margin-bottom: 32px;
+}
+.card-instructions__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  margin-left: 24px;
+}
+.card-instructions__link {
+  font-family: "Outfit";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5f564d;
+}
+.card-nutrition {
+  margin-top: 32px;
+}
+.card-nutrition__title {
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: #854632;
+  margin-bottom: 24px;
+}
+.card-nutrition__desc {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5f564d;
+  margin-bottom: 24px;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--bs-secondary-color);
+  text-align: left;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+tbody,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  border-color: var(--bs-table-border-color);
+}
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  color: var(
+    --bs-table-color-state,
+    var(--bs-table-color-type, var(--bs-table-color))
+  );
+
+  border-bottom-width: 1px;
+}
+.table > tbody {
+  vertical-align: inherit;
+}
+
+.row {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5f564d;
+}
+.val {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #854632;
+}
+
+/* responsive tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+  }
+  body {
+    padding: 32px;
+    background: #f3e5d7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .card {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    padding: 40px;
+    border-radius: 16px;
+  }
+  .card-image__thumb {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 40px;
+  }
+  /* Typography scales a touch down on tablet */
+  .card-title__head {
+    font-size: 36px;
+  }
+  .card-preparation__title {
+    font-size: 18px;
+  }
+  .card-ingredients__title,
+  .card-instructions__title,
+  .card-nutrition__title {
+    font-size: 24px;
+  }
+
+  /* Remove fixed widths/heights so sections flow naturally */
+  .card-preparation,
+  .card-ingredients,
+  .card-instructions,
+  .card-nutrition {
+    width: 100%;
+    height: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+
+  .card-preparation {
+    padding: 20px;
+  }
+
+  .card-ingredients__list,
+  .card-preparation__list,
+  .card-instructions__list {
+    width: 100%;
+    margin-left: 20px; /* keep list indent but a bit smaller */
+    gap: 10px;
+  }
+
+  /* Slightly reduce body text for comfortable line length */
+  .card-title__desc,
+  .card-ingredients__link,
+  .card-instructions__link,
+  .card-nutrition__desc,
+  .row,
+  .val,
+  span {
+    font-size: 15px;
+    line-height: 150%;
+  }
+
+  /* Table tweaks so it breathes on tablet */
+  .table {
+    width: 100%;
+  }
+  .table > :not(caption) > * > * {
+    padding: 12px 0; /* a hair more vertical rhythm */
+  }
+}
+
+/* (Optional) iPad portrait & small tablets: ≤820px for tighter hero image & text */
+@media (max-width: 820px) {
+  .card {
+    padding: 28px;
+  }
+  .card-image__thumb {
+    height: 300px;
+  }
+  .card-title__head {
+    font-size: 32px;
+  }
+}
