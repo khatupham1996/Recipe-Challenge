@@ -297,13 +297,12 @@ th {
   }
 
   .card-preparation,
-  .card-ingredients,
   .card-instructions,
   .card-nutrition {
     width: 100%;
     height: auto;
-    margin-top: 28px;
-    margin-bottom: 28px;
+    /* margin-top: 28px;
+    margin-bottom: 28px; */
   }
 
   .card-preparation {
@@ -386,13 +385,12 @@ th {
   }
 
   .card-preparation,
-  .card-ingredients,
   .card-instructions,
   .card-nutrition {
     width: 100%;
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
   }
 
   .card-preparation {
